@@ -7,6 +7,8 @@ import Dashboard from "./scenes/dashboard/index";
 import Sidebar from "./scenes/dashboard/global/Sidebar";
 import { useState } from "react";
 import Team from "./scenes/dashboard/team";
+import Contacts from "./scenes/dashboard/contacts";
+import Invoices from "./scenes/invoices";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -22,6 +24,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/invoices" element={<Invoices />} />
             </Routes>
           </main>
         </div>
