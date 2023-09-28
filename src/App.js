@@ -6,6 +6,7 @@ import Dashboard from "./scenes/dashboard/index";
 
 import Sidebar from "./scenes/dashboard/global/Sidebar";
 import { useState } from "react";
+import Team from "./scenes/dashboard/team";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -15,11 +16,12 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="App">
-        <Sidebar isSidebar={isSidebar} />
+          <Sidebar isSidebar={isSidebar} />
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/team" element={<Team />} />
             </Routes>
           </main>
         </div>
