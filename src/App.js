@@ -3,27 +3,21 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/dashboard/global/Topbar";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./scenes/dashboard/index";
-import Team from "./scenes/team/index";
-import Invoices from "./scenes/invoices";
-import Contacts from "./scenes/contacts";
-import Bar from "./scenes/bar";
-import Line from "./scenes/line";
-import Pie from "./scenes/pie";
-import FAQ from "./scenes/faq";
-import Geography from "./scenes/geography";
-import Calender from "./scenes/calender";
+
 import Sidebar from "./scenes/dashboard/global/Sidebar";
+import { useState } from "react";
 
 function App() {
   const [theme, colorMode] = useMode();
+  const [isSidebar, setIsSidebar] = useState(true);
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="App">
-          <Sidebar/>
+        <Sidebar isSidebar={isSidebar} />
           <main className="content">
-            <Topbar />
+            <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
             </Routes>

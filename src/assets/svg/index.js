@@ -1,0 +1,1 @@
+export {default as Userimg} from "./user.svg"
