@@ -3,7 +3,7 @@ import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
-import { tokens } from "../../../theme";
+
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlineOutlinedIcon from "@mui/icons-material/PeopleOutlineOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
@@ -16,7 +16,8 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import { Userimg } from "../../../assets/svg";
+import { Userimg } from "../../assets/svg/index";
+import { tokens } from "../../theme";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
