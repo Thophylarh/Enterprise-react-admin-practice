@@ -166,7 +166,7 @@ const Sidebar = () => {
             setSelected={setSelected}
             />
             <Item 
-            title="FAQ Pae"
+            title="FAQ Page"
             to="/faq"
             icon={<HelpOutlineOutlinedIcon/>}
             selected={selected}
@@ -177,7 +177,7 @@ const Sidebar = () => {
             </Typography>
             <Item 
             title="Bar Chart"
-            to="/bar"
+            to="/bar-chart"
             icon={<BarChartOutlinedIcon/>}
             selected={selected}
             setSelected={setSelected}

@@ -12,6 +12,9 @@ import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import Form from "./scenes/form";
 import Calender from "./scenes/calender";
+import FAQ from "./scenes/faq";
+import Bar from "./scenes/bar";
+import Pie from "./scenes/pie";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -31,6 +34,9 @@ function App() {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
               <Route path="/calender" element={<Calender />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/bar-chart" element={<Bar />} />
+              <Route path="/pie-chart" element={<Pie />} />
             </Routes>
           </main>
         </div>

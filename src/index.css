@@ -24,3 +24,6 @@ html,body,#root, .app, .content{
 ::-webkit-scrollbar-track:hover{
   background: #555;
 }
+.custom-tooltip-color .nivo-tooltip {
+  color: black !important;
+}
