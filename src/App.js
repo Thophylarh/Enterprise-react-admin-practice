@@ -17,6 +17,8 @@ import Bar from "./scenes/bar";
 import Pie from "./scenes/pie";
 import Line from "./scenes/line";
 
+import Geography from "./scenes/geography";
+
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
@@ -39,6 +41,7 @@ function App() {
               <Route path="/bar-chart" element={<Bar />} />
               <Route path="/pie-chart" element={<Pie />} />
               <Route path="/line-chart" element={<Line />} />
+              <Route path="/geo-chart" element={<Geography />} />
             </Routes>
           </main>
         </div>
