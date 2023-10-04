@@ -1,21 +1,21 @@
-import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import { ColorModeContext, useMode } from "./theme";
 
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Dashboard from "./scenes/dashboard/index";
 
 import { useState } from "react";
-import Team from "./scenes/team";
-import Contacts from "./scenes/contacts";
-import Invoices from "./scenes/invoices";
-import Topbar from "./scenes/global/Topbar";
-import Sidebar from "./scenes/global/Sidebar";
-import Form from "./scenes/form";
-import Calender from "./scenes/calender";
-import FAQ from "./scenes/faq";
 import Bar from "./scenes/bar";
-import Pie from "./scenes/pie";
+import Calender from "./scenes/calender";
+import Contacts from "./scenes/contacts";
+import FAQ from "./scenes/faq";
+import Form from "./scenes/form";
+import Sidebar from "./scenes/global/Sidebar";
+import Topbar from "./scenes/global/Topbar";
+import Invoices from "./scenes/invoices";
 import Line from "./scenes/line";
+import Pie from "./scenes/pie";
+import Team from "./scenes/team";
 
 import Geography from "./scenes/geography";
 
@@ -30,7 +30,7 @@ function App() {
           <Sidebar isSidebar={isSidebar} />
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
-            <Routes>
+            {/* <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
@@ -42,7 +42,7 @@ function App() {
               <Route path="/pie-chart" element={<Pie />} />
               <Route path="/line-chart" element={<Line />} />
               <Route path="/geo-chart" element={<Geography />} />
-            </Routes>
+            </Routes> */}
           </main>
         </div>
       </ThemeProvider>
